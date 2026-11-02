@@ -1,0 +1,1 @@
+"""Inquira test suite."""
