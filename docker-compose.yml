@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  inquira:
+    build: .
+    image: inquira:latest
+    container_name: inquira
+    ports:
+      - "8501:8501"
+    environment:
+      - LEDGER_PATH=/app/compliance/events.jsonl
+    volumes:
+      - ./compliance:/app/compliance
+    restart: unless-stopped
