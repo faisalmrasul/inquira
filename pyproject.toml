@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "inquira"
+version = "0.1.0"
+description = "Inquira — The Trust Layer for Professional AI (EU AI Act governance prototype)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Inquira Team" }]
+dependencies = [
+    "streamlit>=1.32.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0"]
+
+[tool.setuptools]
+packages = [
+    "src",
+    "src.trust_core",
+    "src.governance",
+    "src.ledger",
+    "src.pipeline",
+    "src.ui",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
