@@ -1,4 +1,5 @@
 # 🛡️ Inquira — The Trust Layer for Professional AI
+<img width="1350" height="598" alt="Inquira" src="https://github.com/user-attachments/assets/ad3148fc-4e55-41bc-b495-041c780f3ebc" />
 
 Inquira is a Streamlit prototype that evaluates every AI query against the
 **EU AI Act (Regulation (EU) 2024/1689)** as a universal design standard.
